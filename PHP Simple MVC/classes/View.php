@@ -18,7 +18,7 @@ class View {
 	
 	public function setPage($page) {$this->page = $page;}
 	
-	public function getPageHTML():string {
+	public function getHTML():string {
 		switch ($this->page) {
 			case 'in':   return $this->logoutForm();
 			case 'out':  return $this->loggedOut();
